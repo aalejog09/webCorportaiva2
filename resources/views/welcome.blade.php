@@ -79,7 +79,7 @@
                                 <div class="col-auto ml-2">
                                     <h3 class="m-0"><span class="text-red text-bold">
                                             NCO</span> <span class="text-blue text-bold">VIP</span> <br>
-                                           <small class="text-gray"> Medicina Preventiva</small>
+                                           <small class="text-gray hidden-sm-up"> Medicina Preventiva</small>
                                     </h3>
                                 </div>
                                 <div class="col-auto mr-2">
@@ -167,7 +167,7 @@
                                    <mark>Varios</mark> <br>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt autem voluptatum 
                                 </p>
-                               <a class="btn btn-success" href="{{url('/examenes')}}">Leer más</a>
+                               <a class="btn btn-success" href="#examenes">Leer más</a>
                             </div>
                         </div>
                 </div>
@@ -272,7 +272,7 @@
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------> 
             <section class="row contenedor-parallax" id="examenes">
-                    <div class="p-md-5 h-100 w-100 bg-darken col-12 ">
+                    <div class="pt-5 p-md-5 h-100 w-100 bg-darken col-12 ">
                         <div class="mb-5 text-white row">
                             <div class="col-12">
                                <div class="row">
@@ -377,6 +377,19 @@
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
+            <section class="row" id="premiun">
+                
+                
+            
+
+            </section>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
             <footer class="footer bg-blue text-white row" id="footer">
                 <div class="col">
                     <div class="row justify-content-between">
@@ -425,11 +438,11 @@
                 </div>
             </footer> 
         </div>
-         <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/scrollUp.js')}}"></script>
-        <script src="{{asset('js/parallax.js')}}"></script>
-        <script src="{{asset('js/mapsClick.js')}}"></script>
+         <script src="{{ secure_asset('js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{ secure_asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{ secure_asset('js/scrollUp.js')}}"></script>
+        <script src="{{ secure_asset('js/parallax.js')}}"></script>
+        <script src="{{ secure_asset('js/mapsClick.js')}}"></script>
 
     </body>
 </html>

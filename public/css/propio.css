@@ -47,7 +47,7 @@
 
            .bg-white{
 
-                background-color: rgba(255,255,255,0.9);
+                background-color: rgba(255,255,255);
            }
 
            .text-blue{
@@ -181,7 +181,7 @@
 
             .tarjet{
 
-                border:1px solid white;
+                border:5px solid white;
                 padding: 5px;
             }
 
