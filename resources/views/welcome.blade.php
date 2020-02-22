@@ -6,187 +6,22 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Oncovip Medicina preventiva Papanicolaou</title>
         <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/fuente-estilos.css')}}">
-        <style>
-           body{
-
-
-           }
-
-           .bg-darken{
+        <link rel="stylesheet" href="{{asset('css/font-style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/propio.css')}}">
                 
-                background-color:rgba(115,113,113,0.5);
-                    
-
-           }
-            
-            .contenedor-parallax{
-
-                background-image: url('img/fondoParallax.jpg');
-                background-attachment: fixed;
-                background-size: auto 120vh;
-                background-position: center 0;
-                
-            }
-                    
-            .font-parallax{
-
-
-            }
-            
-            .back-lightGrey{
-
-                background-color: #E6E4E4;
-            }
-
-            .back-grey{
-
-                background-color: #F9F9F9;
-            }
-            
-           .bg-blue{
-
-                background-color: #404699;
-           }
-
-           .bg-white{
-
-                background-color: rgba(255,255,255,0.9);
-           }
-
-           .text-blue{
-
-                color: #373C85;
-                font-size: 40px
-
-
-            }
-            
-            .h-100{
-                
-                height: 100%;
-            }
-            .vh-100{
-                
-                height: 100vh;
-
-            }
-             .text-red{
-
-                color: red;
-                font-size: 40px
-            }
-
-            .text-bold{
-
-                font-weight: bold;
-            }
-
-            .text-gray{
-
-                color: gray
-            }
-
-            .titulo-mobil{
-                
-                font-family: 
-            }
-            .container-link{
-
-                height: 100%;
-                display: flex;
-                align-items: center;
-                transition: 0.5s all ease;
-            }
-            
-            .container-link:hover{
-
-                transition: 0.5s all ease;
-                background-color: #041B92;
-                color: white;
-            }
-        
-
-            .link{
-
-                color:gray;
-                text-decoration: none;
-
-            }
-                
-            .anclante{
-                
-                position: relative;
-
-            }
-
-            .flotante{
-                
-                position: absolute;
-                bottom:15%;
-            }
-
-            .tarjeta1{
-
-                
-                padding: 30px;
-
-                background-color: rgba(83,224,129,0.8);
-                color:white;
-            }
-
-            .tarjeta2{
-
-                
-                padding: 30px;
-
-                background-color: rgba(72,195,112,0.8);
-                color:white;
-            }
-
-            .tarjeta3{
-
-                
-                padding: 30px;
-
-                background-color: rgba(60,161,93,0.8);
-                color:white;
-            }
-
-            .fixed{
-
-                position: fixed;
-                z-index: 1;
-            }
-           
-            .mt-fixed{
-
-                margin-top: 106px 
-            }
-
-            .boton-arriba{
-                
-                
-                display: none;
-                bottom:20px;
-                right:20px;
-                background-color: black;
-                padding: 20px;
-                color: white;
-                cursor: pointer;
-                position: fixed;
-                z-index: 1000;
-            }
-            
-            .footer{
-
-                padding: 30px;
-            }
-        </style>
     </head>
     <body>
-        <span class="boton-arriba icon-up"></span>
-        <div class="container-fluid"> el huevo
+        <span class="boton-arriba icon-up"></span><!--BOTON DE SCROLL UP-->
+         <div class="mapsModal bg-darken">
+           <div class="row h-100 justify-content-center align-items-center">
+                <span class="close icon-close"></span>
+                <div class="col-auto" id="mapsContenedor">
+                            
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid"> 
             <header class="row">
                 <div class="col">
                     <div class="back-lightGrey row justify-content-between p-4 hidden-sm-down">
@@ -261,10 +96,10 @@
                                     <a href="{{url('/kit')}}" class="link">KIT ADN</a>
                                 </div>
                                 <div class=" col-12 col-md-auto">
-                                    <a href="{{url('/contacto')}}" class="link">CONTACTO</a>
+                                    <a href="#footer" class="link">UBÍCANOS</a>
                                 </div>
                                 <div class=" col-12 col-md-auto">
-                                    <a href="{{url('/consultas')}}" class="link">CONSULTAS GRATIS</a>
+                                    <a href="#consultas" class="link">CONSULTAS GRATIS</a>
                                 </div>
                                  <div class="col-12 col-md-auto">
                                     <a href="{{url('/promociones')}}" class="link">PROMOCIONES</a>
@@ -360,7 +195,7 @@
                                    <mark>Varios</mark> <br>
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt autem voluptatum 
                                 </p>
-                               <a class="btn btn-success" href="{{url('/examenes')}}">Leer más</a>
+                               <a class="btn btn-success" href="#examenes">Leer más</a>
                             </div>
                         </div>
                 </div>
@@ -436,38 +271,113 @@
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------> 
-            <section class="row contenedor-parallax">
-                    <div class="vh-100 col-12 text-center">
-                        <div class="h-100 bg-darken  text-white row align-items-center">
-                            <div class="col-12 ">
-                                <h1 class="m-0 display-4 font-parallax">Examenes individuales</h1>
+            <section class="row contenedor-parallax" id="examenes">
+                    <div class="p-md-5 h-100 w-100 bg-darken col-12 ">
+                        <div class="mb-5 text-white row">
+                            <div class="col-12">
+                               <div class="row">
+                                   <div class="col-12 mb-5 text-center">
+                                        <h1 class="m-0 display-4 font-parallax"><span class="hidden-md-down">Nuestros </span>Examenes</h1>
+                                   </div>
+                                   <div class="col-12  text-center">
+                                       <span class="icon-world display-1"></span>
+                                   </div>
+                               </div>
                             </div>
-                            <div class="col-12 col-md">
-                                <h3 class="m-0">COBAS</h3>
+                        </div>
+                        <div class="row text-white mb-5">
+                            <div class="col-12">
+                                <div class="col-12 col-md-6 col-md">
+                                    <h3 class="m-0 mb-2"><span class="icon-list"> </span><span class="hidden-md-down">EXAMENES </span><span class="hidden-md-up">EXAMEN</span> DE COBAS</h3>
+                                    <p class="lead text-justify">Esta prueba detecta los tipos de virus del papiloma humano de alto riesgo que pueden provocar cáncer de cuello uterino. El proceso de la prueba es el mismo que el de la prueba de Papanicolaou, se toman muestras de células del cuello del útero y se envian a un laboratorio para que sean analizadas.</p>
+                                </div>
                             </div>
-                             <div class="col-12 col-md">
-                                <h3 class="m-0">BIOPSIA DE CERVIX</h3>
-                            </div>
-                             <div class="col-12 col-md">
-                                <h3 class="m-0">BIOPSIA DE MAMAS</h3>
-                            </div>
-                             <div class="col-12 col-md">
-                                <h3 class="m-0">BIOPSIA DE ENDOMETRIO</h3>
-                            </div>
-                            <div class="col-12 col-md">
-                                <h3 class="m-0">MAMOGRAFÍAS</h3>
+                        </div>
+                        <div class="row text-white">
+                            <div class="col-12">
+                                <div class="row justify-content-end mb-5">
+                                    <div class="col-6 col-md-3 mb-3">
+                                        <div class="tarjet">
+                                            <h4 class="m-0 ">BIOPSIAS <br>DE CERVIX</h4>
+                                        </div>
+                                    </div>
+                                     <div class="col-6 col-md-3 mb-3 ">
+                                        <div class="tarjet">
+                                            <h4 class="m-0 ">BIOPSIAS <br>DE MAMAS</h4> 
+                                        </div>
+                                    </div>
+                                     <div class=" col-12 col-md-3 mb-3 ">
+                                        <div class="tarjet">
+                                            <h4 class="m-0 ">BIOPSIAS <br>DE ENDOMETRIO</h4>
+                                        </div>                                           
+                                    </div>
+                                     <div class="col-12 col-md-3 mb-5 ">
+                                        <div class="tarjet">
+                                            <h4 class="m-0 ">BIOPSIAS <br>DE MAMOGRAFÍA</h4>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
             </section>
-             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
-            <footer class="footer bg-blue text-white row">
+            <!------------------------------------------------------------------------------------------------------------------>
+            <section class="p-5 back-grey row" id="consultas">
+                <div class="col-12">
+                    <form class="row " action="">
+                        <div class="col-12">
+                            <h1 class="hidden-md-down text-blue">Consultas Gratis</h1>
+                            <h1 class="hidden-md-up text-blue">Consultas</h1>
+                            <hr>
+                        </div>
+                        <div class="col-12 col-md-3 align-self-center">
+                           <div class="row ">
+                                <div class="col-12">
+                                    <label for="">Nombre <br><input type="text" required="" maxlength="10" pattern="[a-z]"><br></label>
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Apellido <br><input type="text" required="" maxlength="10" pattern="[a-z]"><br></label>
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Correo <br><input type="text" required="" maxlength="30" pattern="[@gmail.com]"></label>
+                                </div>
+                                <div class="col-12">
+                                    <label for="">Asunto <br><input type="text" required="" maxlength="30" pattern="[a-z]"></label>
+                                </div>
+                                <div class="col-5 mb-3 hidden-md-down ">
+                                    <button type="submit" class="btn btn-success">Enviar</button>
+                                </div>
+                                <div class="col-5 mb-5 hidden-md-down">
+                                    <button type="button" class="btn btn-danger">Borrar</button>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="col-12 col-md-9 ">
+                             <label for="" class="w-100">Mensaje <br><textarea style="width: 100%" name="" id="" rows="10"></textarea><br></label>
+                        </div>
+                        <div class="col-5  hidden-md-up ">
+                             <button type="submit" class="btn btn-success">Enviar</button>
+                        </div>
+                        <div class="col-5  hidden-md-up">
+                             <button type="button" class="btn btn-danger">Borrar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <footer class="footer bg-blue text-white row" id="footer">
                 <div class="col">
                     <div class="row justify-content-between">
                         <div class="col-12">
@@ -476,7 +386,7 @@
                         <div class="col-12 col-sm-5 col-md-5">
                              <hr style="background-color:#6868F9">
                             <p> 
-                                Local San Borja <br>
+                                Local San Borja <br>Click para ver ubicacion--> <img id="sanBorja"  class="maps pointer" src="{{asset('img/maps.png')}}" alt=""><br>
                                 Calle Bernini 352, 1er piso, Torre de Consultorios - San Borja <br>
                                 A la espalda de la Clínica San Borja (Av. Guardia Civil) <br>
                                 Altura cdra. 17 de la Av. Javier Prado Este <br>
@@ -490,7 +400,7 @@
                                 <div class="col-12">
                                     <hr style="background-color:#6868F9">
                                     <p>   
-                                        Local Los Olivos <br>
+                                        Local Los Olivos <br>Click para ver ubicacion--> <img id="losOlivos" class="maps pointer" src="{{asset('img/maps.png')}}" alt=""><br>
                                         Av. Carlos Izaguirre 552 - 554 (Segundo Piso) <br>
                                         Teléfono: (511) 5354029 <br>
                                         Atención: Lunes a Sábado de 9am a 1pm / 4pm a 8pm <br>
@@ -519,5 +429,7 @@
         <script src="{{asset('js/bootstrap.min.js')}}"></script>
         <script src="{{asset('js/scrollUp.js')}}"></script>
         <script src="{{asset('js/parallax.js')}}"></script>
+        <script src="{{asset('js/mapsClick.js')}}"></script>
+
     </body>
 </html>
