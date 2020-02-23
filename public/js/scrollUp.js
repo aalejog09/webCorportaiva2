@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
 
-	$('.boton-arriba').on('click',function(){
+	$('#boton-arriba').on('click',function(){
 
 		$('html').animate({
 

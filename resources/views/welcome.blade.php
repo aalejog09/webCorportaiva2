@@ -5,21 +5,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Oncovip Medicina preventiva Papanicolaou</title>
-        <link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}">
-        <link rel="stylesheet" href="{{ secure_asset('css/font-style.css') }}">
-        <link rel="stylesheet" href="{{ secure_asset('css/propio.css') }}">
+        <link rel="stylesheet" href="{{secure_asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/font-style.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/font-menuMobil.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/propio.css')}}">
                 
     </head>
     <body>
-        <span class="boton-arriba icon-up"></span><!--BOTON DE SCROLL UP-->
-         <div class="mapsModal bg-darken">
+        <span id="boton-arriba" class="boton-arriba icon-up"></span><!--BOTON DE SCROLL UP-->
+         <div class="mapsModal bg-darken"><!--contenedor modal para los maps-->
            <div class="row h-100 justify-content-center align-items-center">
                 <span class="close icon-close"></span>
                 <div class="col-auto" id="mapsContenedor">
                             
                 </div>
             </div>
-        </div>
+         </div>
+             <div class="menuModal container hidden-md-up"><!--contenedor del menu modal para mobiles-->
+                 <div class="row">
+                    <div class="header-menuMobil col-12 pt-2 pb-2" >
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <span class="text-white pl-3">MENU DE NAVEGACION</span>  
+                            </div>
+                            <div class="col-auto">
+                                <span id="close-menuMobil" class="close-menuMobil icon-close pr-3"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 pt-3 pb-3 ">
+                        <a href="#"  class="link-menuMobil text-white"><span class="icon-kit"></span> Kit ADN</a>
+                    </div>
+                    <div class="col-12 pt-3 pb-3 ">
+                        <a href="#footer" class="link-menuMobil text-white"><span class="icon-maps"></span> UBÍCANOS</a>
+                    </div>
+                    <div class="col-12 pt-3 pb-3 ">
+                        <a href="#consultas" class="link-menuMobil text-white"><span class="icon-list"></span> CONSULTA GRATIS</a>
+                    </div>
+                    <div class="col-12 pt-3 pb-3 ">
+                        <a href="#" class="link-menuMobil text-white"><span class="icon-cash"></span> PROMOCIONES</a>
+                    </div>
+                </div>
+             </div>
+
 
         <div class="container-fluid"> 
             <header class="row">
@@ -76,14 +104,14 @@
                         </div>
                         <div class="col-12 hidden-md-up fixed bg-white"><!--VISIBLE PARA MOBIL-->
                             <div class="row pt-3 pb-3  justify-content-between align-items-center">
-                                <div class="col-auto ml-2">
+                                <div class="col-auto ml-3">
                                     <h3 class="m-0"><span class="text-red text-bold">
                                             NCO</span> <span class="text-blue text-bold">VIP</span> <br>
                                            <small class="text-gray hidden-sm-up"> Medicina Preventiva</small>
                                     </h3>
                                 </div>
-                                <div class="col-auto mr-2">
-                                    <a href="#"><img src="{{asset('img/menu.png')}}" alt=""></a>
+                                <div class="col-auto mr-3">
+                                    <a href="#"><img src="{{asset('img/menu.png')}}" alt="" id="menuMobil"></a><!--boton del menu mobil-->
                                 </div>
                            </div>
                         </div>
@@ -438,11 +466,12 @@
                 </div>
             </footer> 
         </div>
-         <script src="{{ secure_asset('js/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{ secure_asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{ secure_asset('js/scrollUp.js')}}"></script>
-        <script src="{{ secure_asset('js/parallax.js')}}"></script>
-        <script src="{{ secure_asset('js/mapsClick.js')}}"></script>
+        <script src="{{secure_asset('js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{secure_asset('js/scrollUp.js')}}"></script>
+        <!--<script src="{{asset('js/parallax.js')}}"></script>-->
+        <script src="{{secure_asset('js/mapsClick.js')}}"></script>
+        <script src="{{secure_asset('js/menuMobil.js')}}"></script>
 
     </body>
 </html>

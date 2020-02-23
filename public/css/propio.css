@@ -205,3 +205,34 @@
                 top:45px;
                 right: 30px;
             }
+
+            .contenedor-menuModal{
+
+                background-color:tomato 
+
+            }
+
+            .menuModal{
+
+                position:fixed;
+                width: 80vw; 
+                height: 100vh;
+                left: -100vw;
+                background-color:#474646;
+                z-index: 20000;
+            }
+
+            .header-menuMobil{
+
+                background-color:#000000; 
+            }
+
+            .close-menuMobil{
+
+               
+                font-size: 20px;
+                color: white
+
+            }
+
+          
