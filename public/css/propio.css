@@ -34,7 +34,11 @@
 
                 background-color: #E6E4E4;
             }
-
+            
+            .bg-red{
+                
+                background-color: #DE0303;
+            }
             .back-grey{
 
                 background-color: #F9F9F9;
@@ -80,7 +84,7 @@
 
             .text-gray{
 
-                color: gray
+                color: #545353
             }
 
             .titulo-mobil{

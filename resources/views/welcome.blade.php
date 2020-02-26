@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="col-12 pt-3 pb-3 ">
-                        <a href="#"  class="link-menuMobil text-white"><span class="icon-kit"></span> Kit ADN</a>
+                        <a href="#kitAdn"  class="link-menuMobil text-white"><span class="icon-kit"></span> Kit ADN</a>
                     </div>
                     <div class="col-12 pt-3 pb-3 ">
                         <a href="#footer" class="link-menuMobil text-white"><span class="icon-maps"></span> UBÍCANOS</a>
@@ -43,7 +43,7 @@
                         <a href="#consultas" class="link-menuMobil text-white"><span class="icon-list"></span> CONSULTA GRATIS</a>
                     </div>
                     <div class="col-12 pt-3 pb-3 ">
-                        <a href="#" class="link-menuMobil text-white"><span class="icon-cash"></span> PROMOCIONES</a>
+                        <a href="#promociones" class="link-menuMobil text-white"><span class="icon-cash"></span> PROMOCIONES</a>
                     </div>
                 </div>
              </div>
@@ -121,7 +121,7 @@
                                     <a href="{{url('/')}}" class="link">INICIO</a>
                                 </div>
                                 <div class=" col-12 col-md-auto ">
-                                    <a href="{{url('/kit')}}" class="link">KIT ADN</a>
+                                    <a href="#kitAdn" class="link">KIT ADN</a>
                                 </div>
                                 <div class=" col-12 col-md-auto">
                                     <a href="#footer" class="link">UBÍCANOS</a>
@@ -130,7 +130,7 @@
                                     <a href="#consultas" class="link">CONSULTAS GRATIS</a>
                                 </div>
                                  <div class="col-12 col-md-auto">
-                                    <a href="{{url('/promociones')}}" class="link">PROMOCIONES</a>
+                                    <a href="#promociones" class="link">PROMOCIONES</a>
                                 </div>
                                  @if (Route::has('login'))
 
@@ -155,7 +155,7 @@
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             
-           <section class="row mt-fixed mt-md-0 anclante">
+           <section class="row mt-fixed mt-sm-5 mt-md-0 anclante">
                <div class=" col-12 p-0 mb-0">
                     <div id="carouselExampleSlidesOnly" class="anclante carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
@@ -179,7 +179,7 @@
                                     <mark>Chequeo Integral</mark> <br>
                                     Consiste en una serie de exámenes de todos los órganos del aparato genital femenino
                                 </p>
-                                <a class="btn btn-success" href="{{url('/integral')}}">Leer más</a></button>
+                                <a class="btn btn-success" href="#integral">Leer más</a></button>
                             </div>
                             <div class="tarjeta2 col-12 col-md-3">
                                 <h2>Ginecológo </h2>
@@ -187,7 +187,7 @@
                                    <mark> Chequeo Premiun</mark> <br>
                                     Este chequeo consiste en la realización del Chequeo Ginecológico Integral
                                 </p>
-                                <a class="btn btn-success" href="{{url('/premiun')}}">Leer más</a></button>
+                                <a class="btn btn-success" href="#premium">Leer más</a></button>
                             </div>
                             <div class="tarjeta3 col-12 col-md-3">
                                 <h2>Exámenes</h2>
@@ -207,7 +207,7 @@
                                     <mark>Chequeo Integral</mark> <br>
                                     Consiste en una serie de exámenes de todos los órganos del aparato genital femenino
                                 </p>
-                                <a class="btn btn-success" href="{{url('/integral')}}">Leer más</a></button>
+                                <a class="btn btn-success" href="#integral">Leer más</a></button>
                             </div>
                             <div class="tarjeta2 col-12 col-md-3  mb-2">
                                 <h2>Ginecológo </h2>
@@ -215,7 +215,7 @@
                                    <mark> Chequeo Premiun</mark> <br>
                                     Este chequeo consiste en la realización del Chequeo Ginecológico Integral
                                 </p>
-                                <a class="btn btn-success" href="{{url('/premiun')}}">Leer más</a></button>
+                                <a class="btn btn-success" href="#premium">Leer más</a></button>
                             </div>
                             <div class="tarjeta3 col-12 col-md-3 mb-2">
                                 <h2>Exámenes</h2>
@@ -356,7 +356,106 @@
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
-            <section class="p-5 back-grey row" id="consultas">
+            <section class="row " id="promociones">
+                    <div class="col-12 p-5 text-white" style="background-color: #2020FA">
+                       <h1>Chequeo Ginecologico Integral</h1> 
+                       <p>Chequeo ginecológico integral, todo en una sola visita. <br> <a href="#integral">Ver detalles</a> <br> S/. 100.00</p>
+                    </div>
+                    <div class="col-12 p-5 text-white" style="background-color: #4848FE">
+                       <h1>Chequeo Ginecológico Premium</h1> 
+                       <p>Chequeo preventivo integral que incluye la detección genética del Virus Papiloma Humano.<br> <a href="#premium">Ver detalles</a> <br> S/. 400.00</p>
+
+                    </div>
+                    <div class="col-12 p-5 text-white" style="background-color: #9393FF">
+                        <h1>Chequeo de Fertilidad de pareja</h1> 
+                       <p>Chequeo de fertilidad de pareja, todo en tres visitas.<br> <a href="#consultas">Ver detalles</a> <br> S/. 400.00</p>
+                    </div>
+            </section>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <section class="row " id="chequeos">
+                <div class="col-12 col-md-6" id="integral">
+                    <div class="row">
+                        <div class="col-12 p-5 bg-blue">
+                            <h1 class="text-white">CHEQUEO INTEGRAL</h1>
+                        </div>
+                        <div class="col-12 p-5 text-justify">
+                            <p class="lead text-gray">Consiste en una serie de exámenes de todos los órganos del aparato genital femenino como son: la vulva, la vagina, el cuello uterino, el útero, trompas, endometrio, ovarios y mamas. <br><br>
+
+                            Este Chequeo Integral Ginecológico se realiza en una sola sesión, en un mismo lugar, en un mínimo de tiempo y por un mismo gineco-obstetra altamente calificado. <br><br>
+
+                            Como a nuestro centro, ONCOVIP le interesa la prevención este chequeo cuesta el valor de una consulta. Además, se hace entrega de un informe escrito inmediato de todos los exámenes realizados y los resultados del Test de Papanicolaou y frotis vaginal, después de 48 horas de realizado este chequeo. <br><br>
+
+                            La utilidad de este examen radica en que detecta todas las patologías existentes y previene las complicaciones y trastornos futuros del área genital femenina. Identifica, además, problemas comunes, como infecciones en el cuello uterino y la vagina, quistes de ovario, fibromas, quistes de las mamas, etc. También enfermedades malignas y premalignas de todos los órganos del aparato femenino que actualmente ningún chequeo detecta en el Perú. Cabe mencionar que, actualmente este chequeo se lleva cabo en países desarrollados como Estados Unidos, Europa y Japón.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6" id="premium">
+                    <div class="row">
+                        <div class="col-12 p-5 bg-red">
+                            <h1 class="text-white">CHEQUEO PREMIUN</h1>
+                        </div>
+                        <div class="col-12 p-5 text-justify">
+                            <p class="lead text-gray">Este chequeo consiste en la realización del Chequeo Ginecológico Integral, al cual se le suma la detección genética del Virus Papiloma Humano, el cual es causante del cáncer de cuello uterino. <br><br>
+
+                            Existen más de 100 serotipos de Virus Papiloma Humano entre ellos los de alta, mediana y baja agresividad, por lo que detectarlos es de suma importancia para elegir el tratamiento adecuado y brindar un pronóstico acertado. <br><br>
+
+                            Además de esta manera tenemos la oportunidad de aplicarte la vacuna contra el Virus (VPH).</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+             <section class="row pb-5" id="kitAdn">
+                 <div class="col-12">
+                     <div class="row">
+                         <div class="col-12 col-md-auto ml-5 mr-2 hidden-sm-down">
+                             <img src="{{asset('img/kitAdn02.jpg')}}" alt="" class="h-100 w-100">
+                         </div>
+                         <div class="col-12 col-md-8">
+                            <div class="row">
+                                <div class="col-12 mb-5">
+                                     <img src="{{asset('img/kitAdn.jpg')}}" alt="" class="w-100">  
+                                </div>
+                                <div class="col-12 p-5">
+                                    <h1>KIT ADN</h1>
+                                    <p class="lead text-justify">
+
+                                        Fácil: una toma de muestra de saliva. <br><br>
+
+                                        Rápida: en pocas semanas se obtienen los resultados. <br><br>
+
+                                        Segura: Pathway analiza la muestra recolectada de saliva en laboratorio certificado CLIA, Clinical Laboratory Improvement Amendments. <br><br>
+
+                                        Confidencial: cada muestra tomada en el kit es procesada bajo un ambiente controlado y seguro para proveer confidencialidad y seguridad al paciente. <br><br>
+
+                                        Asesoría: asesores certificados por la American Board of Genetic Counseling. <br><br>
+                                    </p>
+                                </div>
+                            </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+            <!------------------------------------------------------------------------------------------------------------------>
+             <section class="p-5 back-grey row" id="consultas">
                 <div class="col-12">
                     <form class="row " action="">
                         <div class="col-12">
@@ -397,19 +496,6 @@
                         </div>
                     </form>
                 </div>
-            </section>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <!------------------------------------------------------------------------------------------------------------------>
-            <section class="row" id="premiun">
-                
-                
-            
-
             </section>
             <!------------------------------------------------------------------------------------------------------------------>
             <!------------------------------------------------------------------------------------------------------------------>
