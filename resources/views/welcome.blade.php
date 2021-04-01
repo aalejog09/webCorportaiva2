@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Oncovip Medicina preventiva Papanicolaou</title>
-        <link rel="stylesheet" href="{{secure_asset('css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{secure_asset('css/font-style.css')}}">
-        <link rel="stylesheet" href="{{secure_asset('css/font-menuMobil.css')}}">
-        <link rel="stylesheet" href="{{secure_asset('css/propio.css')}}">
+        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('css/font-style.css')}}">
+        <link rel="stylesheet" href="{{asset('css/font-menuMobil.css')}}">
+        <link rel="stylesheet" href="{{asset('css/propio.css')}}">
                 
     </head>
     <body>
@@ -552,12 +552,12 @@
                 </div>
             </footer> 
         </div>
-        <script src="{{secure_asset('js/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{secure_asset('js/scrollUp.js')}}"></script>
+        <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('js/scrollUp.js')}}"></script>
         <!--<script src="{{asset('js/parallax.js')}}"></script>-->
-        <script src="{{secure_asset('js/mapsClick.js')}}"></script>
-        <script src="{{secure_asset('js/menuMobil.js')}}"></script>
+        <script src="{{asset('js/mapsClick.js')}}"></script>
+        <script src="{{asset('js/menuMobil.js')}}"></script>
 
     </body>
 </html>

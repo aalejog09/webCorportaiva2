@@ -35,7 +35,7 @@ $(document).ready(function(){
 	});
 
 
-	$('.link-menuMobil').on('click',function(){
+	$('.link-menuMobil').on('submit',function(){
 
 		$('.menuModal').animate({
 
