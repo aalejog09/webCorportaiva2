@@ -5,10 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Oncovip Medicina preventiva Papanicolaou</title>
-        <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-        <link rel="stylesheet" href="{{asset('css/font-style.css')}}">
-        <link rel="stylesheet" href="{{asset('css/font-menuMobil.css')}}">
-        <link rel="stylesheet" href="{{asset('css/propio.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/font-style.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/font-menuMobil.css')}}">
+        <link rel="stylesheet" href="{{secure_asset('css/propio.css')}}">
                 
     </head>
     <body>
@@ -56,7 +56,7 @@
                         <div class="col-12 col-md-auto">
                             <div class="row justify-content-start">
                                 <div class="col-auto pr-2">
-                                    <img src="{{asset('img/location.png')}}" alt="">
+                                    <img src="{{secure_asset('img/location.png')}}" alt="">
                                 </div>
                                 <div class="col-auto align-self-center">
                                    <span class="lead"> Sucursal Av. Carlos Izaguirre 552 - 554 (Segundo Piso) local los olivos</span>
@@ -65,7 +65,7 @@
                         </div>
                         <div class="col-12 col-md-auto">
                           <div class="row justify-content-end">
-                              <div class="col-auto"> <img src="{{asset('img/phone.png')}}" alt=""> </div>
+                              <div class="col-auto"> <img src="{{secure_asset('img/phone.png')}}" alt=""> </div>
                               <div class="col-auto align-self-center pr-2"><span class="lead">Central los olivos</span></div>
                               <div class="col-auto align-self-center"><span class="lead">(511)535-4029</span> </div>
                           </div>
@@ -75,7 +75,7 @@
                         <div class="col-12 col-md-auto">
                             <div class="row justify-content-start">
                                 <div class="col-auto pr-2">
-                                    <img src="{{asset('img/location.png')}}" alt="">
+                                    <img src="{{secure_asset('img/location.png')}}" alt="">
                                 </div>
                                 <div class="col-auto align-self-center">
                                    <span class="lead"> Calle Bernini 352, 1er. piso, Torre de Consultorios - San Borja</span>
@@ -84,7 +84,7 @@
                         </div>
                         <div class="col-12 col-md-auto">
                           <div class="row justify-content-end">
-                              <div class="col-auto"> <img src="{{asset('img/phone.png')}}" alt=""> </div>
+                              <div class="col-auto"> <img src="{{secure_asset('img/phone.png')}}" alt=""> </div>
                               <div class="col-auto align-self-center pr-2"><span class="lead">Central San Borja</span></div>
                               <div class="col-auto align-self-center"><span class="lead">(511)224-6638</span> </div>
                           </div>
@@ -95,10 +95,10 @@
                         <div class="col-sm-12 col-md-auto hidden-sm-down"><!--VISIBLE PARA LAPTOP-->
                            <div class="row justify-content-between align-items-center">
                                 <div class="col-auto col-md-12 col-md-auto pb-5 pt-5">
-                                    <img class="" src="{{asset('img/logo.jpg')}}" alt="">
+                                    <img class="" src="{{secure_asset('img/logo.jpg')}}" alt="">
                                 </div>
                                 <div class="col-auto col-md-auto   pb-5 pt-5 hidden-md-up">
-                                    <a href="#"><img src="{{asset('img/menu.png')}}" alt=""></a>
+                                    <a href="#"><img src="{{secure_asset('img/menu.png')}}" alt=""></a>
                                 </div>
                            </div>
                         </div>
@@ -111,7 +111,7 @@
                                     </h3>
                                 </div>
                                 <div class="col-auto mr-3">
-                                    <a href="#"><img src="{{asset('img/menu.png')}}" alt="" id="menuMobil"></a><!--boton del menu mobil-->
+                                    <a href="#"><img src="{{secure_asset('img/menu.png')}}" alt="" id="menuMobil"></a><!--boton del menu mobil-->
                                 </div>
                            </div>
                         </div>
@@ -138,7 +138,7 @@
 
                                     @else
                                         <div class="col-12 col-md-auto">
-                                            <a href="{{ url('/login') }}" class="link"><img src="{{asset('img/account.png')}}" alt=""> LOGIN</a>
+                                            <a href="{{ url('/login') }}" class="link"><img src="{{secure_asset('img/account.png')}}" alt=""> LOGIN</a>
                                         </div>
                                      @endif
                                  @endif
@@ -160,13 +160,13 @@
                     <div id="carouselExampleSlidesOnly" class="anclante carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img class="d-block w-100" src="{{asset('img/banner06.jpg')}}" alt="First slide">
+                              <img class="d-block w-100" src="{{secure_asset('img/banner06.jpg')}}" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="{{asset('img/banner07.jpg')}}" alt="Second slide">
+                              <img class="d-block w-100" src="{{secure_asset('img/banner07.jpg')}}" alt="Second slide">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="{{asset('img/banner08.jpg')}}" alt="Third slide">
+                              <img class="d-block w-100" src="{{secure_asset('img/banner08.jpg')}}" alt="Third slide">
                             </div>
                           </div>
                     </div>
@@ -250,10 +250,10 @@
                          <div id="carouselExampleSlidesOnly" class="anclante carousel slide" data-ride="carousel">
                           <div class="carousel-inner">
                             <div class="carousel-item active">
-                              <img class="d-block w-100" src="{{asset('img/nosotros01.jpg')}}" alt="First slide">
+                              <img class="d-block w-100" src="{{secure_asset('img/nosotros01.jpg')}}" alt="First slide">
                             </div>
                             <div class="carousel-item">
-                              <img class="d-block w-100" src="{{asset('img/nosotros03.jpg')}}" alt="Third slide">
+                              <img class="d-block w-100" src="{{secure_asset('img/nosotros03.jpg')}}" alt="Third slide">
                             </div>
                           </div>
                     </div>
@@ -281,13 +281,13 @@
                  <div class="col-12">
                     <div class="row">
                         <div class="col-12 mb-5 col-sm col-md text-center">
-                            <img src="{{asset('img/heart.png')}}" alt=""><br> Dr. Carlos Matta <br> <mark>Gineco-Obstetricia</mark>
+                            <img src="{{secure_asset('img/heart.png')}}" alt=""><br> Dr. Carlos Matta <br> <mark>Gineco-Obstetricia</mark>
                         </div>
                         <div class="col-12 mb-5   col-sm col-md text-center">
-                            <img src="{{asset('img/heart.png')}}" alt=""><br> Dr. Juan C. Delgado <br> <mark>Gineco-Obstetricia</mark>
+                            <img src="{{secure_asset('img/heart.png')}}" alt=""><br> Dr. Juan C. Delgado <br> <mark>Gineco-Obstetricia</mark>
                         </div>
                         <div class="col-12 mb-5   col-sm col-md text-center">
-                            <img src="{{asset('img/heart.png')}}" alt=""><br> Dr. Julio Rios Urrutia <br> <mark>Gineco-Obstetricia</mark>
+                            <img src="{{secure_asset('img/heart.png')}}" alt=""><br> Dr. Julio Rios Urrutia <br> <mark>Gineco-Obstetricia</mark>
                         </div>
                     </div>
                 </div>
@@ -421,12 +421,12 @@
                  <div class="col-12">
                      <div class="row">
                          <div class="col-12 col-md-auto ml-5 mr-2 hidden-sm-down">
-                             <img src="{{asset('img/kitAdn02.jpg')}}" alt="" class="h-100 w-100">
+                             <img src="{{secure_asset('img/kitAdn02.jpg')}}" alt="" class="h-100 w-100">
                          </div>
                          <div class="col-12 col-md-8">
                             <div class="row">
                                 <div class="col-12 mb-5">
-                                     <img src="{{asset('img/kitAdn.jpg')}}" alt="" class="w-100">  
+                                     <img src="{{secure_asset('img/kitAdn.jpg')}}" alt="" class="w-100">  
                                 </div>
                                 <div class="col-12 p-5">
                                     <h1>KIT ADN</h1>
@@ -513,7 +513,7 @@
                         <div class="col-12 col-sm-5 col-md-5">
                              <hr style="background-color:#6868F9">
                             <p> 
-                                Local San Borja <br>Click para ver ubicacion--> <img id="sanBorja"  class="maps pointer" src="{{asset('img/maps.png')}}" alt=""><br>
+                                Local San Borja <br>Click para ver ubicacion--> <img id="sanBorja"  class="maps pointer" src="{{secure_asset('img/maps.png')}}" alt=""><br>
                                 Calle Bernini 352, 1er piso, Torre de Consultorios - San Borja <br>
                                 A la espalda de la Clínica San Borja (Av. Guardia Civil) <br>
                                 Altura cdra. 17 de la Av. Javier Prado Este <br>
@@ -527,7 +527,7 @@
                                 <div class="col-12">
                                     <hr style="background-color:#6868F9">
                                     <p>   
-                                        Local Los Olivos <br>Click para ver ubicacion--> <img id="losOlivos" class="maps pointer" src="{{asset('img/maps.png')}}" alt=""><br>
+                                        Local Los Olivos <br>Click para ver ubicacion--> <img id="losOlivos" class="maps pointer" src="{{secure_asset('img/maps.png')}}" alt=""><br>
                                         Av. Carlos Izaguirre 552 - 554 (Segundo Piso) <br>
                                         Teléfono: (511) 5354029 <br>
                                         Atención: Lunes a Sábado de 9am a 1pm / 4pm a 8pm <br>
@@ -535,10 +535,10 @@
                                     </p>
                                 </div>
                                 <div class="col-12 mb-5">
-                                    <a href="#"><img src="{{asset('img/network01.png')}}" alt=""></a>
-                                    <a href="#"><img src="{{asset('img/network02.png')}}" alt=""></a>
-                                    <a href="#"><img src="{{asset('img/network03.png')}}" alt=""></a>
-                                    <a href="#"><img src="{{asset('img/network04.png')}}" alt=""></a>
+                                    <a href="#"><img src="{{secure_asset('img/network01.png')}}" alt=""></a>
+                                    <a href="#"><img src="{{secure_asset('img/network02.png')}}" alt=""></a>
+                                    <a href="#"><img src="{{secure_asset('img/network03.png')}}" alt=""></a>
+                                    <a href="#"><img src="{{secure_asset('img/network04.png')}}" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -552,12 +552,12 @@
                 </div>
             </footer> 
         </div>
-        <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
-        <script src="{{asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{asset('js/scrollUp.js')}}"></script>
-        <!--<script src="{{asset('js/parallax.js')}}"></script>-->
-        <script src="{{asset('js/mapsClick.js')}}"></script>
-        <script src="{{asset('js/menuMobil.js')}}"></script>
+        <script src="{{secure_asset('js/jquery-3.2.1.min.js')}}"></script>
+        <script src="{{secure_asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{secure_asset('js/scrollUp.js')}}"></script>
+        <!--<script src="{{secure_asset('js/parallax.js')}}"></script>-->
+        <script src="{{secure_asset('js/mapsClick.js')}}"></script>
+        <script src="{{secure_asset('js/menuMobil.js')}}"></script>
 
     </body>
 </html>
